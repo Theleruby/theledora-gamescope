@@ -13,11 +13,13 @@ The purpose of Theledora is to allow me to preinstall things from the Fedora pac
 
 ## About this image
 
-This image (**theledora-gamescope**) is based on [bazzite-deck:stable-43](https://github.com/ublue-os/bazzite/pkgs/container/bazzite-deck). It is intended for handhelds and home theater PCs which have AMD GPUs (RX 400 series or later). It behaves roughly like the Steam Deck, booting into a gamescope session (Steam Gaming Mode) by default, with a KDE Plasma desktop session being available for system maintenance tasks. The experience should be very similar to SteamOS.
+This image (**theledora-gamescope**) is based on [bazzite-deck:stable-43](https://github.com/ublue-os/bazzite/pkgs/container/bazzite-deck). It is intended for handhelds and home theater PCs which have AMD GPUs (RX 400 series or later). It behaves roughly like the Steam Deck, booting into a gamescope session (Steam Gaming Mode) by default, with a KDE Plasma desktop session being available for system maintenance tasks. If you own a Steam Deck then the experience should be very close to what you're used to already.
 
-If being used for a home theater PC, it is best paired with the new Steam Controller, although it works "fine" with Xbox controllers (just you won't have any trackpads or rear buttons).
+If being used for a home theater PC, it is best paired with the new Steam Controller, although it works fine with various other types of controllers. When using a non-Steam controller, the options menu can be accessed by pressing Xbox+A or equivalent.
 
 Intel and NVIDIA GPUs are not supported on this image. If you need to support an NVIDIA GPU then you should use the desktop image instead.
+
+Note that when you're using the gamescope session it will claim you're running SteamOS despite this being inaccurate. This is due to limitations of the Steam Gaming Mode UI and can just be ignored.
 
 ## Legal notice and disclaimer
 
