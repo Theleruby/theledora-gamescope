@@ -13,6 +13,7 @@ dnf5 config-manager setopt rpmfusion-free.enabled=1
 dnf5 config-manager setopt rpmfusion-free-updates.enabled=1
 dnf5 config-manager setopt rpmfusion-nonfree.enabled=1
 dnf5 config-manager setopt rpmfusion-nonfree-updates.enabled=1
+dnf5 install -y rpmfusion-free-release-tainted rpmfusion-nonfree-release-tainted
 
 # htop
 dnf5 install -y htop
@@ -25,6 +26,9 @@ dnf5 install -y easyeffects calf lv2 lv2-calf-plugins lv2-mdala-plugins lv2-zam-
 
 # alsa plugin for dolby digital
 dnf5 install -y alsa-plugins-a52
+
+# libdvdcss for dvd playback
+dnf5 install -y libdvdcss
 
 # python
 dnf5 install -y python3-devel
@@ -75,6 +79,9 @@ dnf5 install -y QDiskInfo
 dnf5 install -y cabextract fontconfig
 dnf5 install -y gnu-free-fonts-common gnu-free-sans-fonts lpf-cleartype-fonts lpf-mscore-fonts lpf-mscore-tahoma-fonts
 rm /usr/share/applications/lpf*.desktop
+
+# ffmpeg swap
+dnf5 swap ffmpeg-free ffmpeg --allowerasing
 
 # move stuff in /var/opt to /usr/lib/opt and add symlink to tmpfiles conf
 # taken from https://github.com/astrovm/amyos/blob/main/build_files/fix-opt.sh, thanks <3
