@@ -68,7 +68,7 @@ dnf5 install -y avidemux
 dnf5 install -y krusader
 
 # some misc kde productivity apps that are useful
-dnf5 install -y kolourpaint krita kdenlive kamoso
+dnf5 install -y kolourpaint krita kdenlive kamoso skanpage
 
 # disk utils similar to crystaldisk
 dnf5 install -y kdiskmark
